@@ -21,9 +21,9 @@ We use the docker environment for this experiment. After the preparation of the 
 
 ```
 docker run -itd \
-  -v ./Tem-adapter-remove/Tem-adapter:/workspace/Tem-adapter-remove \
-  -v ./raw_videos/:/workspace/Tem-adapter-remove/data/raw_videos \
-  -v ./SUTD-TrafficQA-Dataset/annotations/archived/R3_all.jsonl:/workspace/Tem-adapter-remove/data/annotation_file/R3_all.jsonl \
+  -v ./FIQ:/workspace/FIQ \
+  -v ./raw_videos/:/workspace/FIQ/data/raw_videos \
+  -v ./SUTD-TrafficQA-Dataset/annotations/archived/R3_all.jsonl:/workspace/FIQ/data/annotation_file/R3_all.jsonl \
   --gpus all \
   --name tem-adapter-remove\
   pytorch/pytorch:2.5.0-cuda12.4-cudnn9-devel
