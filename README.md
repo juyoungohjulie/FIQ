@@ -5,16 +5,31 @@ This is the official repository of the paper FIQ: Fundamental Question Generatio
 ![figure](fiq_figure.png)
 
 ## Dataset Preparation
-We use [SUTD-TrafficQA](https://sutdcv.github.io/SUTD-TrafficQA/#/) as a main dataset. Please download the dataset by following the link, and place it under /data folder. The directory structure would be like:
+We use the [SUTD-TrafficQA](https://sutdcv.github.io/SUTD-TrafficQA/#/) dataset as the main source.  
+Please download the dataset from the link above and place the extracted folder inside the `/data` directory.  
+After setup, your project structure should look like this:
 
 ```
 FIQ/
-|-- data/
-|-- model/
-|-- ...
+├── data/
+│ └── [SUTD-TrafficQA files here]
+├── model/
+├── ...
 ```
 
-For the feature files, checkpoints, and Q&A dataset json file, please download it through the [google drive](https://drive.google.com/drive/folders/1u4bk0CUn17Y67lxlVML9EQst78mpTT6Q).
+Additionally, download the feature files, model checkpoints, and the Q&A JSON dataset from [this Google Drive link](https://drive.google.com/drive/folders/1u4bk0CUn17Y67lxlVML9EQst78mpTT6Q).  
+Once downloaded, create a subdirectory named `/sutd-traffic/` inside the `/data` folder, and place **all downloaded files** into that directory:
+```
+FIQ/
+├── data/
+│ ├── sutd-traffic/
+│ │ ├── sutd-traffic_appearance_feat_clip_image.h5
+│ │ ├── output_file_train.jsonl
+│ │ ├── output_file_test.jsonl
+│ │ └── final_SUTD_qa_without_blank_allU.jsonl
+├── model/
+├── ...
+```
 
 ## Installation
 We use the docker environment for this experiment. After the preparation of the dataset, please run the following command below:
@@ -31,7 +46,7 @@ docker run -itd \
 After running the command above, please run commands below inside a docker container.
 
 ```
-pip install ffmpeg scikit-video ftfy regex tqdm timm jsonlines decord line_profiler einops
+pip install ffmpeg scikit-video ftfy regex tqdm timm jsonlines decord line_profiler einops wandb
 apt-get update
 apt-get install git
 pip install git+https://github.com/openai/CLIP.git
