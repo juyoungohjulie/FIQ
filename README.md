@@ -50,7 +50,6 @@ We use [VideChat2](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_cha
 ```
 python gpt_QG/qg_sutd.py
 ```
-For the detailed process of question generation, please follow the [link]().
 ## Training
 To train the model, please run the following command:
 ```
