@@ -33,7 +33,7 @@ After running the command above, please run commands below inside a docker conta
 ```
 pip install ffmpeg scikit-video ftfy regex tqdm timm jsonlines
 apt-get update
-pip install git
+apt-get install git
 pip install git+https://github.com/openai/CLIP.git
 pip install -r requirements.txt
 ```
