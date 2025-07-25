@@ -14,7 +14,7 @@ FIQ/
 |-- ...
 ```
 
-For the feature files, checkpoints, and Q&A dataset json file, please download it through the [google drive]().
+For the feature files, checkpoints, and Q&A dataset json file, please download it through the [google drive](https://drive.google.com/drive/folders/1u4bk0CUn17Y67lxlVML9EQst78mpTT6Q).
 
 ## Installation
 We use the docker environment for this experiment. After the preparation of the dataset, please run the following command below:
