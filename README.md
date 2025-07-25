@@ -46,7 +46,7 @@ CUDA_VISIBLE_DEVICES=0 python preprocess/preprocess_features.py --dataset sutd-t
 ```
 
 ## Q&A Dataset Generation
-We use [VideChat2](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2) to extract the video description. Based on this, we design the prompt to generate Q&A pairs for GPT-4o-mini by following [paper](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://aclanthology.org/2022.naacl-main.142.pdf). Please run the command below to generate Q&A pairs:
+We use [VideChat2](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2) to extract the video description. Based on this, we design the prompt to generate Q&A pairs for GPT-4o-mini by following [paper](https://arxiv.org/pdf/2205.01883). Please run the command below to generate Q&A pairs:
 ```
 python gpt_QG/qg_sutd.py
 ```
