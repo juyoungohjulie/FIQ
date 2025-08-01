@@ -77,8 +77,14 @@ To evaluate the model, please execute the following command structure:
 CUDA_VISIBLE_DEVICES=0 python validate.py --cfg configs/sutd-traffic_transition.yml
 ```
 ## Citation  
-if you find our work is helpful, please consider cite this paper (Coming soon):
+if you find our work is helpful, please consider cite this paper:
 ```
+@inproceedings{fiq,
+  title={FIQ: Fundamental Question Generation with the Integration of Question Embeddings for Video Question Answering},
+  author={{Juyoung Oh and Ho-Joong Kim and Seong-Whan Lee},
+  booktitle={arXiv preprint arXiv:2507.12816},
+  year={2025}
+}
 ```
 ## Acknowledgement
 Our methods are developed based on [Tem-adapter](https://github.com/XLiu443/Tem-adapter). Thank authors for releasing the code and the pretrained models.
